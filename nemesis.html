@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to$
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NEMESIS</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+  figure {
+   float: right;
+   width: 30%;
+   text-align: center;
+   font-style: italic;
+   font-size: smaller;
+   text-indent: 0;
+   border: thin silver solid;
+   margin: 0.5em;
+   padding: 0.5em;
+   }
+   img.scaled {
+        width: 100%;
+   }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">NEMESIS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-labe$
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nemesis.html">About NEMESIS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="papers.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="manuals.html">Manuals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="misc.html">Miscellaneous</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+
+        <figure>
+                <p><img class=scaled src="img/Alfred_Rethel_002.jpg" alt="Nemesis">
+                <figcaption><i>Nemesis</i>, by Alfred Rethel (1837)</figcaption>
+        </figure>
+
+        <h1 class="mt-5">About NEMESIS?</h1>
+         Nemesis is traditionally known as the Goddess of Vengeance and Retribution. 
+         Some authors connect the name with “to feel just resentment” or “righteous anger”. 
+         However, the word Nemesis originally meant the distributor of fortune, whether 
+         good or bad, in due proportion to each man according to his deserts.
+         <p>
+ 	 <p>
+         In Greek mythology Nemesis was the daughter of Nyx the primordial goddess 
+         of the night. Nyx was born of Chaos. She gave birth to Aether alone and 
+         Hemera, Moros, Charon, Eros and the Keres with her brother, Erebus. With 
+         Dionysus, she mothered Phthonus. Apart from Nemesis, Nyx was also mother 
+         of Momus, Thanatos, Hypnos, the Hesperides, Apate, Philotes, and Geras - the Fates.
+         <p>
+         Nemesis is said to have been as beautiful as Aphrodite and was seduced by Zeus in 
+         the form of a swan. The Goddess of Punishment, Poena, was an attendant of Nemesis.
+         <p>
+         As Nemesis/Fortuna, a conflation of the Greek deity of fate with the Roman Fortuna, 
+         she was perceived not as bringer of retribution, but as having the power of changing 
+         fortune. Hence, she was an ideal deity to make patron goddess of gladiators. It is
+         thought that gladiators made offerings to this “goddess of fortune” before fighting 
+         in the Roman arenas. It is the “goddess of fortune” view of Nemesis, which inspired 
+         the naming of this retrieval code in her honour. It is hoped that Nemesis will bring 
+         good fortune and will considerably improve the retrieval of atmospheric properties 
+         from remotely-sensed infrared planetary spectra.
+         <p>
+         The NEMESIS code actually has <b>two</b> components, the <b>NEMESIS</b> retrieval tool itself
+         and also the more general radiative transfer code, <b>RADTRANS</b>, from which it was developed.
+
+         <h1 class="mt-5">The NEMESIS Retrieval Model</h1>
+         <b>NEMESIS</b>  (<b>N</b>on-linear optimal <b>E</b>stimator for <b>M</b>ultivariat<b>E</b> spectral
+         analy<b>SIS</b>) is general purpose correlated-k/LBL retrieval code developed from the
+         <b>RADTRANS</b> project. <b>NEMESIS</b> was originally developed for Cassini/CIRS retrievals,
+         but was designed from the start to be applicable to any planetary atmosphere. 
+         It has since been applied to analyse the spectra of every planet in our solar 
+         system that has an atmosphere and has also been extended to analyse the spectra
+         of exoplanets. 
+
+         <h1 class="mt-5">The RADTRANS Radiative Transfer Model</h1>
+         <b>RADTRANS</b> is a general purpose planetary radiative transfer model for computing 
+         the transmission of atmospheric paths and/or the radiances emitted by 
+         planetary atmospheres. The code is general purpose and not hard-wired to any
+         specific planet. <b>RADTRANS</b> evolved from <b>Genlbl</b>, which was a general purpose
+         planetary line-by-line model, developed by Dr Simon Calcutt. Radtrans extended
+         the functionality of this program to also allow the computation of planetary
+         spectra using both band model approximations and also the correlated-k 
+         approximation. The code has also been extended to incorporate both multiple 
+         scattering and single scattering calculations.
+         <p>
+         The Nemesis project is continually being developed and extended and is
+         managed with the Github. 
+         Scientists interested in running either Nemesis or Radtrans to analyse their 
+         data are very welcome to contact us.
+
+         <h1 class="mt-5"> References </h1>
+         Irwin, P.G.J., N.A. Teanby, R. de Kok, L.N. Fletcher, C.J.A. Howett, 
+         C.C.C. Tsang, C.F. Wilson, S.B. Calcutt, C.A. Nixon, P.D. Parrish, 
+         The NEMESIS planetary atmosphere radiative transfer and retrieval tool, 
+         J. Quant. Spectrosc. and Rad. Trans., 109, 1136-1150, 2008.
+         <p>
+         Irwin, P. G. J., S. B. Calcutt and F. W. Taylor, Radiative transfer models 
+         for Galileo NIMS studies of the atmosphere of Jupiter. Adv. Space. Res. 19, 
+         No. 8, pp 1149-1158, 1997.
+         <p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

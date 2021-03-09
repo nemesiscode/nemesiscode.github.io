@@ -13,23 +13,22 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-  figure {
-   float: right;
-   width: 30%;
-   text-align: center;
-   font-style: italic;
-   font-size: smaller;
-   text-indent: 0;
-   border: thin silver solid;
-   margin: 0.5em;
-   padding: 0.5em;
-   }
-   img.scaled {
-   	width: 100%;
-   }
-
-  </style>
+  <!--  <style>  -->
+  <!--  figure {  -->
+  <!--   float: right;  -->
+  <!--   width: 30%;  -->
+  <!--   text-align: center;  -->
+  <!--   font-style: italic;  -->
+  <!--   font-size: smaller;  -->
+  <!--   text-indent: 0;  -->
+  <!--   border: thin silver solid;  -->
+  <!--   margin: 0.5em;  -->
+  <!--   padding: 0.5em;  -->
+  <!--   }  -->
+  <!--   img.scaled {  -->
+  <!--   	width: 100%;  -->
+  <!--   }  -->
+  <!--  </style>  -->
 </head>
 
 <body>
@@ -72,22 +71,40 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-left">
-        <h1 class="mt-5">NEMESIS</h1>
         <figure>
-        	<p><img class=scaled src="img/Alfred_Rethel_002.jpg" alt="Nemesis">
-        	<figcaption><i>Nemesis</i>, by Alfred Rethel (1837)</figcaption>
+             <img src="img/Nem_logo.png" width=800 align=center>
         </figure>
-        Welcome to the NEMESIS project pages.
         <p>
+        <figure>
+             <img src="img/Nem_label.png" width=300 align=right>
+        </figure>
+        
+<!--        <figure> -->
+<!--        	<img class=scaled src="img/Alfred_Rethel_002.jpg" alt="Nemesis"> -->
+<!--        	<figcaption><i>Nemesis</i>, by Alfred Rethel (1837)</figcaption> -->
+<!--        </figure> -->
+
         <b>NEMESIS</b> (<b>N</b>on-linear Optimal <b>E</b>stimator for <b>M</b>ultivariat<b>E</b>
         Spectral Analy<b>SIS</b>) is a general purpose radiative transfer and retrieval tool designed for analysing visible/infrared observations
         of any planetary atmosphere and was originated at the <a href="http://www.ox.ac.uk">University of Oxford</a> in 2003. Its chief developer
         is <a href="http://users.ox.ac.uk/~atmp0035/">Patrick Irwin</a> at Oxford University, but many others have contributed to it, 
-        including:
-        <a href="https://leighfletcher.github.io">Leigh Fletcher</a>, 
+        including: <a href="https://leighfletcher.github.io">Leigh Fletcher</a>,
         <a href="https://research-information.bris.ac.uk/en/persons/nicholas-a-teanby">Nick Teanby</a>,
-        <a href="https://science.gsfc.nasa.gov/sed/bio/conor.a.nixon">Conor Nixon</a>, 
+        </ul><a href="https://science.gsfc.nasa.gov/sed/bio/conor.a.nixon">Conor Nixon</a>, 
         <a href="https://www2.physics.ox.ac.uk/contacts/people/calcutt">Simon Calcutt</a>, and many more.
+        <p>
+        Key points of <b>NEMESIS</b>: 
+        <ul> 
+        <li> Originally developed for solar system studies (Cassini/CIRS observations of Jupiter, Saturn and 
+        Titan), but extended for primary transit, secondary eclipse and direct imaging of exoplanets/brown dwarfs.</li>     
+        <li> Designed from start to be generally applicable to any planetary atmosphere and originally designed for use 
+        with a correlated-k forward model.</li>
+        <li> Now extended to model line-by-line spectra also. </li>
+        <li> Handles thermal emission and scattering (multiple and single-scattering).</li>
+        <li> Main code written in FORTRAN. </li>
+        <li> Core retrieval code based on Optimal Estimation, but Nested Sampling implementation now available, 
+        using python wrapper around FORTRAN core.</li>
+        </ul>
         <p>
         <b>NEMESIS</b> is now managed via GitHub and is open-source and free to use. The code repository can be found 
         <a href="https://github.com/patirwin123/radtrancode">here</a>.

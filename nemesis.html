@@ -13,6 +13,35 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+<style>
+/*a little bit of reset*/
+#services-list, #services-list p, #services-list h3 {
+list-style: none;
+margin:0; padding:0;
+}
+
+#services-list > li{
+  float:left;
+  margin-right: 20px;
+  width: 900px;
+}
+
+#services-list > li > .image{
+  display:block;
+  float:left;
+  margin-right:10px;
+}
+
+/*
+this instructions are to force the dimensions of image and its container <a>
+*/
+#services-list > li > .image,
+#services-list > li > .image > img{
+  width:100px; height:100px;
+}
+</style>
+
+  <!--
   <style>
   figure {
    float: right;
@@ -30,7 +59,7 @@
    }
 
   </style>
-
+  -->
 </head>
 
 <body>
@@ -74,36 +103,44 @@
     <div class="row">
       <div class="col-lg-12 text-left">
 
-        <figure>
-                <p><img class=scaled src="img/Alfred_Rethel_002.jpg" alt="Nemesis">
-                <figcaption><i>Nemesis</i>, by Alfred Rethel (1837)</figcaption>
-        </figure>
-
         <h1 class="mt-5">About NEMESIS</h1>
-         Nemesis is traditionally known as the Goddess of Vengeance and Retribution. 
-         Some authors connect the name with “to feel just resentment” or “righteous anger”. 
-         However, the word Nemesis originally meant the distributor of fortune, whether 
-         good or bad, in due proportion to each man according to his deserts.
+
+         NEMESIS is a general-purpose radiative transfer and retrieval code, designed to be applicable 
+         to any planetary atmosphere (solar system and exoplanets) and can handle a wide range if
+         observation geometries. It was originally developed, in 2003, to use the correlated-k model, but can now
+         also model spectra using the line-by-line method.
          <p>
- 	 <p>
-         In Greek mythology Nemesis was the daughter of Nyx the primordial goddess 
-         of the night. Nyx was born of Chaos. She gave birth to Aether alone and 
-         Hemera, Moros, Charon, Eros and the Keres with her brother, Erebus. With 
-         Dionysus, she mothered Phthonus. Apart from Nemesis, Nyx was also mother 
-         of Momus, Thanatos, Hypnos, the Hesperides, Apate, Philotes, and Geras - the Fates.
+         Many have contributed to NEMESIS, including:
+
+	<ul id="services-list">
+	<li>
+	  <a href="http://users.ox.ac.uk/~atmp0035/" class="image">
+	    <img src="img/DSC_0830.jpeg" alt="Facebook Icon" />
+	  </a>
+	  <div class="content">
+	    <h3>Patrick Irwin</h3>
+	    <p>Patrick Irwin is a Prodessor of Planetary Physics at the University of Oxford and is the lead developer of
+               NEMESIS. More bio. to be added.</p>
+	  </div>
+	</li>
+	<li>
+	  <a href="https://leighfletcher.github.io" class="image">
+	    <img src="img/LeighFletcher2016HCUreyprize.jpg" alt="Facebook Icon" />
+	  </a>
+	  <div class="content">
+	  <h3>Leigh Fletcher</h3>
+	    <p>Leigh Fletcher is an Associate Professor in Planetary Science at the University of Leicester, and is a lead
+               contributer to NEMESIS in the field of solar system science. More bio. to be added.</p>
+	  </div>
+	</li>
+	</ul>
+
          <p>
-         Nemesis is said to have been as beautiful as Aphrodite and was seduced by Zeus in 
-         the form of a swan. The Goddess of Punishment, Poena, was an attendant of Nemesis.
          <p>
-         As Nemesis/Fortuna, a conflation of the Greek deity of fate with the Roman Fortuna, 
-         she was perceived not as bringer of retribution, but as having the power of changing 
-         fortune. Hence, she was an ideal deity to make patron goddess of gladiators. It is
-         thought that gladiators made offerings to this “goddess of fortune” before fighting 
-         in the Roman arenas. It is the “goddess of fortune” view of Nemesis, which inspired 
-         the naming of this retrieval code in her honour. It is hoped that Nemesis will bring 
-         good fortune and will considerably improve the retrieval of atmospheric properties 
-         from remotely-sensed infrared planetary spectra.
+	<br>
+         Other biographies and links to be added here.
          <p>
+         <br> 
          The NEMESIS code actually has <b>two</b> components, the <b>NEMESIS</b> retrieval tool itself
          and also the more general radiative transfer code, <b>RADTRANS</b>, from which it was developed.
 
@@ -141,6 +178,34 @@
          Irwin, P. G. J., S. B. Calcutt and F. W. Taylor, Radiative transfer models 
          for Galileo NIMS studies of the atmosphere of Jupiter. Adv. Space. Res. 19, 
          No. 8, pp 1149-1158, 1997. DOI: 10.1016/S0273-1177(97)00266-4
+         <p>
+
+         <h1 class="mt-5">Why is it called NEMESIS?</h1>
+
+         Nemesis is traditionally known as the Goddess of Vengeance and Retribution. 
+         Some authors connect the name with “to feel just resentment” or “righteous anger”. 
+         However, the word Nemesis originally meant the distributor of fortune, whether 
+         good or bad, in due proportion to each man according to his deserts.
+         <p>
+ 	 <p>
+<!--       In Greek mythology Nemesis was the daughter of Nyx the primordial goddess 
+         of the night. Nyx was born of Chaos. She gave birth to Aether alone and 
+         Hemera, Moros, Charon, Eros and the Keres with her brother, Erebus. With 
+         Dionysus, she mothered Phthonus. Apart from Nemesis, Nyx was also mother 
+         of Momus, Thanatos, Hypnos, the Hesperides, Apate, Philotes, and Geras - the Fates.
+         <p>
+         Nemesis is said to have been as beautiful as Aphrodite and was seduced by Zeus in 
+         the form of a swan. The Goddess of Punishment, Poena, was an attendant of Nemesis.
+-->
+         <p>
+         As Nemesis/Fortuna, a conflation of the Greek deity of fate with the Roman Fortuna, 
+         she was perceived not as bringer of retribution, but as having the power of changing 
+         fortune. Hence, she was an ideal deity to make patron goddess of gladiators. It is
+         thought that gladiators made offerings to this “goddess of fortune” before fighting 
+         in the Roman arenas. It is the “goddess of fortune” view of Nemesis, which inspired 
+         the naming of this retrieval code in her honour. It is hoped that Nemesis will bring 
+         good fortune and will considerably improve the retrieval of atmospheric properties 
+         from remotely-sensed infrared planetary spectra.
          <p>
 
 

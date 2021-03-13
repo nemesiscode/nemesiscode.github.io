@@ -23,7 +23,7 @@ margin:0; padding:0;
 #services-list > li{
   float:left;
   margin-right: 20px;
-  width: 900px;
+<!--  width: 900px; -->
 }
 
 #services-list > li > .image{
@@ -106,12 +106,48 @@ this instructions are to force the dimensions of image and its container <a>
         <h1 class="mt-5">About NEMESIS</h1>
 
          NEMESIS is a general-purpose radiative transfer and retrieval code, designed to be applicable 
-         to any planetary atmosphere (solar system and exoplanets) and can handle a wide range if
-         observation geometries. It was originally developed, in 2003, to use the correlated-k model, but can now
-         also model spectra using the line-by-line method.
-         <p>
-         Many have contributed to NEMESIS, including:
+         to any planetary atmosphere (solar system and exoplanets) and can handle a wide range of
+         observation geometries. 
+         The NEMESIS code actually has <b>two</b> components, the <b>NEMESIS</b> retrieval tool itself
+         and also the more general radiative transfer code, <b>RADTRAN</b>, from which it was developed.
+        
+         The Nemesis project is a collaborative effort and is continually being developed and extended. It is
+         managed with Github and the repository can be found  <a href="https://github.com/nemesiscode/radtrancode">here</a>. 
+         Scientists interested in running either <b>NEMESIS</b> or <b>RADTRAN</b> to analyse their 
+         data are very welcome to contact us.
 
+         <h1 class="mt-5">The NEMESIS Retrieval Model</h1>
+         <b>NEMESIS</b>  (<b>N</b>on-linear optimal <b>E</b>stimator for <b>M</b>ultivariat<b>E</b> spectral
+         analy<b>SIS</b>) is the general purpose correlated-k/LBL retrieval code developed from the
+         <b>RADTRAN</b> project. The original version, developed in 2003 and used for analysing Cassini/CIRS observations of 
+         Jupiter, Saturn and Titan, was based on the correlated-k approximation. However, <b>NEMESIS</b> now also now works in
+         line-by-line (LBL) mode. It has been designed to be generally applicable to any planet and with
+         any observing mode and so is suitable for both solar-system studies and also exoplanetary studies. 
+
+         The reference NEMESIS paper is "The NEMESIS planetary atmosphere radiative transfer and retrieval tool",
+         J. Quant. Spectrosc. and Rad. Trans., <b>109</b>, 1136-1150, 2008. (DOI: 10.1016/j.jqsrt.2007.11.006):
+         the accepted manuscript of this paper is <a href="pdf/Nemesis_Revised_Accepted.pdf">here</a>. For
+         more details please see our <a href="manuals.html">Manuals</a> page.
+
+         <h1 class="mt-5">The RADTRAN Radiative Transfer Model</h1>
+         <b>RADTRAN</b> is a general purpose planetary radiative transfer model for computing 
+         the transmission of atmospheric paths and/or the radiances emitted by 
+         planetary atmospheres. The code is general purpose and not hard-wired to any
+         specific planet. <b>RADTRAN</b> evolved from <b>Genlbl</b>, which was a general purpose
+         planetary line-by-line model, developed by Dr Simon Calcutt. <b>RADTRAN</b> extended
+         the functionality of this program to also allow the computation of planetary
+         spectra using both band model approximations and also the correlated-k 
+         approximation. The code has also been extended to incorporate both multiple 
+         scattering and single scattering calculations. For
+         more details please see our <a href="manuals.html">Manuals</a> page.
+
+         <p>
+
+        <h1 class="mt-5">The NEMESIS team</h1>
+        <p>
+        Originated in Oxford in 2003, NEMESIS has since grown and become used by many groups around the world. 
+        Many individuals have contributed to the development of NEMESIS, including:
+        <p>
 	<ul id="services-list">
 	<li>
 	  <a href="http://users.ox.ac.uk/~atmp0035/" class="image">
@@ -120,9 +156,14 @@ this instructions are to force the dimensions of image and its container <a>
 	  <div class="content">
 	    <h3>Patrick Irwin</h3>
 	    <p>Patrick Irwin is a Professor of Planetary Physics at the University of Oxford and is the lead developer of
-               NEMESIS. More bio. to be added.</p>
+               NEMESIS, developing the original version in 2003. He works in the fields of both solar system and exoplanetary atmospheres
+               and specialises in modelling the scattering effects of clouds.
+               He has over 20 years experience in remote sensing of planetary atmospheres from satellite observations and 
+               more recently ground-based observations. He is the principal author or co-author of over 200 papers published 
+               in the open scientific literature.</p>
 	  </div>
 	</li>
+        <br>
 	<li>
 	  <a href="https://leighfletcher.github.io" class="image">
 	    <img src="img/LeighFletcher2016HCUreyprize.jpg" alt="Facebook Icon" />
@@ -137,37 +178,12 @@ this instructions are to force the dimensions of image and its container <a>
 
          <p>
          <p>
+
 	<br>
          Other biographies and links to be added here.
          <p>
-         <br> 
-         The NEMESIS code actually has <b>two</b> components, the <b>NEMESIS</b> retrieval tool itself
-         and also the more general radiative transfer code, <b>RADTRAN</b>, from which it was developed.
 
-         <h1 class="mt-5">The NEMESIS Retrieval Model</h1>
-         <b>NEMESIS</b>  (<b>N</b>on-linear optimal <b>E</b>stimator for <b>M</b>ultivariat<b>E</b> spectral
-         analy<b>SIS</b>) is the general purpose correlated-k/LBL retrieval code developed from the
-         <b>RADTRAN</b> project. It is based in the correlated-k approximation, but also now works in
-         line-by-line (LBL) mode. It has been designed to be generally applicable to any planet and with
-         any observing mode.
-
-         <h1 class="mt-5">The RADTRAN Radiative Transfer Model</h1>
-         <b>RADTRAN</b> is a general purpose planetary radiative transfer model for computing 
-         the transmission of atmospheric paths and/or the radiances emitted by 
-         planetary atmospheres. The code is general purpose and not hard-wired to any
-         specific planet. <b>RADTRAN</b> evolved from <b>Genlbl</b>, which was a general purpose
-         planetary line-by-line model, developed by Dr Simon Calcutt. <b>RADTRAN</b> extended
-         the functionality of this program to also allow the computation of planetary
-         spectra using both band model approximations and also the correlated-k 
-         approximation. The code has also been extended to incorporate both multiple 
-         scattering and single scattering calculations.
-         <p>
-         <p>
-         The Nemesis project is continually being developed and extended and is
-         managed with the Github  <a href="https://github.com/nemesiscode/radtrancode">here</a>. 
-         Scientists interested in running either <b>NEMESIS</b> or <b>RADTRAN</b> to analyse their 
-         data are very welcome to contact us.
-
+<!--
          <h1 class="mt-5"> References </h1>
          Irwin, P.G.J., N.A. Teanby, R. de Kok, L.N. Fletcher, C.J.A. Howett, 
          C.C.C. Tsang, C.F. Wilson, S.B. Calcutt, C.A. Nixon, P.D. Parrish, 
@@ -178,6 +194,7 @@ this instructions are to force the dimensions of image and its container <a>
          Irwin, P. G. J., S. B. Calcutt and F. W. Taylor, Radiative transfer models 
          for Galileo NIMS studies of the atmosphere of Jupiter. Adv. Space. Res. 19, 
          No. 8, pp 1149-1158, 1997. DOI: 10.1016/S0273-1177(97)00266-4
+-->
          <p>
 
          <h1 class="mt-5">Why is it called NEMESIS?</h1>

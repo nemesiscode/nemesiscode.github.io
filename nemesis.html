@@ -124,12 +124,13 @@ this instructions are to force the dimensions of image and its container <a>
          NEMESIS is a general-purpose radiative transfer and retrieval code, written in FORTRAN, designed to be applicable 
          to any planetary atmosphere (solar system and exoplanets) and can handle a wide range of
          observation geometries. 
-         The NEMESIS code actually has <b>two</b> components, the <b>NEMESIS</b> retrieval tool itself
-         and also the more general radiative transfer code, <b>RADTRAN</b>, from which it was developed.
+         The NEMESIS code actually has <b>three</b> components, the <b>NEMESIS</b> FORTRAN retrieval tool itself, 
+		 the more general FORTRAN radiative transfer code, <b>RADTRAN</b>, from which it was developed, and the <b>ArchNEMESIS</b> 
+		 Python code, derived from NEMESIS. 
         
          The Nemesis project is a collaborative effort and is continually being developed and extended. It is
-         managed with Github and the repository can be found  <a href="https://github.com/nemesiscode/radtrancode">here</a>. 
-         Scientists interested in running either <b>NEMESIS</b> or <b>RADTRAN</b> to analyse their 
+         managed with Github and the repository for the FORTRAN code can be found  <a href="https://github.com/nemesiscode/radtrancode">here</a>. 
+         Scientists interested in running either <b>NEMESIS</b>,  <b>RADTRAN</b> or <b>ArchNEMESIS</b> to analyse their 
          data are very welcome to contact us.
 
          <h1 class="mt-5">NEMESIS</h1>
@@ -146,9 +147,6 @@ this instructions are to force the dimensions of image and its container <a>
          the accepted manuscript of this paper is <a href="pdf/Nemesis_Revised_Accepted.pdf">here</a>. For
          more details please see our <a href="manuals.html">Manuals</a> page.
 
-		 The functionality of NEMESIS has now been reproduced in a Python package as 
-		 <a href="https://archnemesis.readthedocs.io/en/latest/index.html">ArchNEMESIS</a>. 
-
 
          <h1 class="mt-5">RADTRAN</h1>
          <b>RADTRAN</b> is a general purpose FORTRAN planetary radiative transfer model for computing 
@@ -161,9 +159,11 @@ this instructions are to force the dimensions of image and its container <a>
          approximation. The code has also been extended to incorporate both multiple 
          scattering and single scattering calculations. For
          more details please see our <a href="manuals.html">Manuals</a> page.
-
          <p>
-
+         <h1 class="mt-5">ArchNEMESIS</h1>
+		 The functionality of NEMESIS has now been reproduced in a Python package as 
+		 <a href="https://archnemesis.readthedocs.io/en/latest/index.html">ArchNEMESIS</a>. 
+        <p> 
         <h1 class="mt-5">Team NEMESIS</h1>
         <p>
         Originated in Oxford in 2003, NEMESIS has since grown and become used by many groups around the world. 
@@ -204,6 +204,26 @@ this instructions are to force the dimensions of image and its container <a>
 	  <h3>Nick Teanby</h3>
 	    <p>Nick Teanby is a Reader in Planetary Science at the University of Bristol and is a lead
                contributer to NEMESIS in the field of solar system science from the sub-mm to mid-IR. In particular the atmospheres of Titan and the ice giants, but also the gas giants and Mars.</p>
+	  </div>
+	</li>
+	<li>
+	  <a href="https://juan.alday.dev" class="image">
+	    <img src="img/juan_square.jpg" alt="Facebook Icon" />
+	  </a>
+	  <div class="content">
+	  <h3>Juan Alday</h3>
+	    <p>Juan Alday  is a Postdoctoral Fellow at Instituto de Astrofísica de Andalucía (IAA-CSIC) and is the lead
+               developer of ArchNEMESIS. His research concentrates on the atmospheres of Mars and Venus.</p>
+	  </div>
+	</li>
+	<li>
+	  <a href="https://www.physics.ox.ac.uk/our-people/penn" class="image">
+	    <img src="img/joe_square.jpg" alt="Facebook Icon" />
+	  </a>
+	  <div class="content">
+	  <h3>Joe Penn</h3>
+	    <p>Joe Penn  is a Doctoral student at the University of Oxfor and is a senior
+               developer of ArchNEMESIS. His research concentrates on the atmospheres of Uranus and Neptune.</p>
 	  </div>
 	</li>
 	</ul>

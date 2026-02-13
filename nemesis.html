@@ -121,7 +121,7 @@ this instructions are to force the dimensions of image and its container <a>
 
         <h1 class="mt-5">About NEMESIS</h1>
 
-         NEMESIS is a general-purpose radiative transfer and retrieval code, designed to be applicable 
+         NEMESIS is a general-purpose radiative transfer and retrieval code, written in FORTRAN, designed to be applicable 
          to any planetary atmosphere (solar system and exoplanets) and can handle a wide range of
          observation geometries. 
          The NEMESIS code actually has <b>two</b> components, the <b>NEMESIS</b> retrieval tool itself
@@ -137,7 +137,8 @@ this instructions are to force the dimensions of image and its container <a>
          analy<b>SIS</b>) is the general purpose correlated-k/LBL retrieval code developed from the
          <b>RADTRAN</b> project. The original version, developed in 2003 and used for analysing Cassini/CIRS observations of 
          Jupiter, Saturn and Titan, was based on the correlated-k approximation. However, <b>NEMESIS</b> now also now works in
-         line-by-line (LBL) mode. It has been designed to be generally applicable to any planet and with
+         line-by-line (LBL) mode, and there is also new mode that uses pre-calculate line-by-line look-up tables.
+		 NEMESIS has been designed to be generally applicable to any planet and with
          any observing mode and so is suitable for both solar-system studies and also exoplanetary studies. 
 
          The reference NEMESIS paper is "The NEMESIS planetary atmosphere radiative transfer and retrieval tool",
@@ -145,8 +146,12 @@ this instructions are to force the dimensions of image and its container <a>
          the accepted manuscript of this paper is <a href="pdf/Nemesis_Revised_Accepted.pdf">here</a>. For
          more details please see our <a href="manuals.html">Manuals</a> page.
 
+		 The functionality of NEMESIS has now been reproduced in a Python package as 
+		 <a href="https://archnemesis.readthedocs.io/en/latest/index.html">ArchNEMESIS</a>. 
+
+
          <h1 class="mt-5">RADTRAN</h1>
-         <b>RADTRAN</b> is a general purpose planetary radiative transfer model for computing 
+         <b>RADTRAN</b> is a general purpose FORTRAN planetary radiative transfer model for computing 
          the transmission of atmospheric paths and/or the radiances emitted by 
          planetary atmospheres. The code is general purpose and not hard-wired to any
          specific planet. <b>RADTRAN</b> evolved from <b>Genlbl</b>, which was a general purpose
@@ -223,7 +228,10 @@ this instructions are to force the dimensions of image and its container <a>
          for Galileo NIMS studies of the atmosphere of Jupiter. Adv. Space. Res. 19, 
          doi:<a href="https://doi.org/10.1016/S0273-1177(97)00266-4">10.1016/S0273-1177(97)00266-4</a>.
          <p>
-
+		 Alday, J., Penn, J., Irwin, P., Mason, J., Yang, J. and Dobinson, J. (2025),
+		 archNEMESIS: An Open-Source Python Package for Analysis of Planetary Atmospheric Spectra, 
+	     Journal of Open Research Software, 13(1), p. 10. doi:<a href="https://doi.org/10.5334/jors.554">10.5334/jors.554</a>.
+		  
          <h1 class="mt-5">Why is it called NEMESIS?</h1>
 
          Nemesis is traditionally known as the Goddess of Vengeance and Retribution. 
